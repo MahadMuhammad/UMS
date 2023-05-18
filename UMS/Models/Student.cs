@@ -46,5 +46,6 @@ namespace UMS.Models
         // collection navigation property
         public ICollection<Finance>? Finances { get; set; }
         public Transcript? Transcript { get; set; } // Navigation property
+        public ICollection<Studies>? Studies { get; set; } // Collection navigation property
     }
 }

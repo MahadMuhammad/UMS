@@ -23,6 +23,8 @@ namespace UMS.Models
         [Required]
         [Range(0b0, 0b1)]
         public bool HasLab { get; set; }
+
+        public ICollection<Studies>? Studies { get; set; } // Collection navigation property
     }
 
 }
