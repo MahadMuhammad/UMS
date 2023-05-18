@@ -30,7 +30,14 @@ namespace UMS.Models
         [StringLength(50, MinimumLength = 3)]
         public string? Email { get; set; }
 
-        public Student? Student { get; set; } // Navigation property
+
+
+        // Add Foreign key property to Student table
+
+        // Add Navigation property to Student table
+        public Student? Student { get; set; }
+        public int? StudentRoll { get; set;}
+
     }
 
 }

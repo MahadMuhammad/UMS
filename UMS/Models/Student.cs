@@ -38,5 +38,10 @@ namespace UMS.Models
         [Required]
         [StringLength(50, MinimumLength = 3)]
         public DateTime? DOB { get; set; }
+
+
+        public Finance? Finance { get; set; } // Navigation property
+        public Guardian? Guardian { get; set; } // Navigation property
+
     }
 }
