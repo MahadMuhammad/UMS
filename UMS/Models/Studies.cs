@@ -23,7 +23,7 @@ namespace UMS.Models
         public Student? Student { get; set; } // Navigation property
         public Course? Course { get; set; } // Navigation property
 
-        public ICollection<Studies>? Studies { get; set; } // Collection navigation property
+        
     }
 }
 
