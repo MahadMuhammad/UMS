@@ -15,7 +15,7 @@ namespace UMS.Models
         [Range(0, 4)]
         public decimal GPA { get; set; }
 
-        public Student Student { get; set; } // Navigation property
+        public Student? Student { get; set; } // Navigation property
     }
 
 }
