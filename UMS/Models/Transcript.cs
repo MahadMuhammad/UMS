@@ -7,7 +7,7 @@ namespace UMS.Models
 
         //public int TranscriptId { get; set; } // You can add a primary key for the Transcript table if needed
         [Key]
-        public int RollNo { get; set; }
+        public string RollNo { get; set; }
 
         // string range validation for GradeLetter
         public string? GradeLetter { get; set; }

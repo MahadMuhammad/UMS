@@ -6,7 +6,7 @@ namespace UMS.Models
     {
         [Key]
         [Range(1, 1000)]
-        public int RollNo { get; set; }
+        public string RollNo { get; set; }
 
 
         [Required]

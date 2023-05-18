@@ -6,8 +6,8 @@ namespace UMS.Models
     {
 
         [Key]
-        [Range(1, 1000)]
-        public int RollNo { get; set; }     // Foreign key from Student table
+        //[Range(1, 1000)]
+        public string RollNo { get; set; }     // Foreign key from Student table
 
         [Required]
         [RegularExpression(@"^\d{5}\d{7}\d{1}$", ErrorMessage = "Invalid CNIC format. Correct format is xxxxx-xxxxxxx-x")]

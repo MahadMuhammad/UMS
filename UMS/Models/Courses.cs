@@ -5,7 +5,7 @@ namespace UMS.Models
     public class Course
     {
         [Key]
-        public int CourseID { get; set; }
+        public string CourseID { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 1)]

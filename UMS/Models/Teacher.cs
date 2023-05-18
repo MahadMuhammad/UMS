@@ -5,7 +5,7 @@ namespace UMS.Models
     public class Teacher
     {
         [Key]
-        public int TeacherID { get; set; }
+        public string TeacherID { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 1)]

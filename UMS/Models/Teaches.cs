@@ -5,7 +5,7 @@ namespace UMS.Models
     public class Teaches
     {
         [Key]
-        public int TeacherID { get; set; }
+        public string TeacherID { get; set; }
         [Required]
         [Key]
         public int CourseID { get; set; }
