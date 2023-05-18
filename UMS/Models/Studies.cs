@@ -5,6 +5,7 @@ namespace UMS.Models
     public class Studies
     {
         [Required]
+        [Key]
         public int RollNo { get; set; }
 
         [Required]

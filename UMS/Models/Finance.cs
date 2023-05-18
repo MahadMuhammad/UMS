@@ -6,6 +6,7 @@ namespace UMS.Models
     {
         //public int FinanceId { get; set; } // You can add a primary key for the Finance table if needed
         [Required]
+        [Key]
         public int RollNo { get; set; }
 
         [Range(0, int.MaxValue)]
