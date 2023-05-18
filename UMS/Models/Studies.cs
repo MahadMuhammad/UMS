@@ -6,7 +6,7 @@ namespace UMS.Models
     {
         [Required]
         [Key]
-        public string RollNo { get; set; }
+        public string? RollNo { get; set; }
 
         [Required]
         public string CourseID { get; set; }
