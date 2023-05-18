@@ -43,5 +43,8 @@ namespace UMS.Models
         public Finance? Finance { get; set; } // Navigation property
         public Guardian? Guardian { get; set; } // Navigation property
 
+        // collection navigation property
+        public ICollection<Finance>? Finances { get; set; }
+        public Transcript? Transcript { get; set; } // Navigation property
     }
 }

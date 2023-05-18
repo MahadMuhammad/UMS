@@ -13,8 +13,7 @@ namespace UMS.Models
         [Range(0, int.MaxValue)]
         public decimal RemainingFee { get; set; }
 
-        public Student Student { get; set; } // Navigation property
-
+        public Student? Student { get; set; } // Navigation property
 
     }
 
