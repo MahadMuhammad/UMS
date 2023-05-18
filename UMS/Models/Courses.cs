@@ -25,6 +25,9 @@ namespace UMS.Models
         public bool HasLab { get; set; }
 
         public ICollection<Studies>? Studies { get; set; } // Collection navigation property
+
+        // add teaches collection navigation property
+        public ICollection<Teaches>? Teaches { get; set; } // Collection navigation property
     }
 
 }

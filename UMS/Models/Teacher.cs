@@ -46,6 +46,9 @@ namespace UMS.Models
         [Required]
         [StringLength(50, MinimumLength = 1)]
         public string? MaxQualification { get; set; }
+
+        // add teaches collection navigation property
+        public ICollection<Teaches>? Teaches { get; set; } // Collection navigation property
     }
 
 }
