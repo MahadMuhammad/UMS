@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using UMS.Data;
+//using UMS.Models;
+//using Microsoft.Extensions.DependencyInjection;
+//using Microsoft.AspNetCore.Builder;
+//using Microsoft.Extensions.Hosting;
+//using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,12 +24,13 @@ if (!app.Environment.IsDevelopment())
 }
 
 // Adding bInitializer class to the pipeline
-using (var scope = app.Services.CreateScope())
-{
-    //var services = scope.ServiceProvider;
-    //var context = services.GetRequiredService<ApplicationDbContext>();
-    //DbInitializer.Initialize(context);
-}
+//using (var scope = app.Services.CreateScope())
+//{
+//    var services = scope.ServiceProvider;
+//    var context = services.GetRequiredService<ApplicationDbContext>();
+//    DbInitializer.Initialize(context);
+//}
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
