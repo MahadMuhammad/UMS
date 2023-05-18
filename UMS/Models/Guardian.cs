@@ -2,12 +2,16 @@
 
 namespace UMS.Models
 {
-    public class Student
+    public class Guardian
     {
+
         [Key]
         [Range(1, 1000)]
-        public int RollNo { get; set; }
+        public int RollNo { get; set; }     // Foreign key from Student table
 
+        [Required]
+        [RegularExpression(@"^\d{5}\d{7}\d{1}$", ErrorMessage = "Invalid CNIC format. Correct format is xxxxx-xxxxxxx-x")]
+        public string? GuardianCNIC { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 3)]
@@ -18,25 +22,15 @@ namespace UMS.Models
         [StringLength(50, MinimumLength = 3)]
         public string? LastName { get; set; }
 
-
         [Required]
         [StringLength(50, MinimumLength = 3)]
-        public string? Gender { get; set; }
-
-        [Required]
-        [StringLength(50, MinimumLength = 3)]
-        public string? CNIC { get; set; }
+        public string? Relationship { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 3)]
         public string? Email { get; set; }
 
-        [Required]
-        [StringLength(50, MinimumLength = 3)]
-        public string? Address { get; set; }
-
-        [Required]
-        [StringLength(50, MinimumLength = 3)]
-        public DateTime? DOB { get; set; }
+        public Student? Student { get; set; } // Navigation property
     }
+
 }
