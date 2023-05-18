@@ -8,7 +8,7 @@ namespace UMS.Models
         public string TeacherID { get; set; }
         [Required]
         [Key]
-        public int CourseID { get; set; }
+        public string CourseID { get; set; }
 
         public Teacher? Teacher { get; set; } // Navigation property
         public Course? Course { get; set; } // Navigation property

@@ -9,7 +9,7 @@ namespace UMS.Models
         public string RollNo { get; set; }
 
         [Required]
-        public int CourseID { get; set; }
+        public string CourseID { get; set; }
 
         [Required]
         public TimeSpan Time { get; set; }
